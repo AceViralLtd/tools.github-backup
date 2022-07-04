@@ -1,0 +1,33 @@
+# location of the git binary on your machine
+# git_bin = ""
+
+[Github]
+# username of the github account with organisation access
+username = ""
+# personal access token for github account
+password = ""
+# name of github organisation
+org_name = ""
+# if repos marked as archived should be skipped from the backup
+skip_archived = false
+
+[Aws]
+# you probably just want to leave this blank
+token = "" # optional
+secret = ""
+user_id = ""
+account_id = ""
+region = ""
+# name of the s3-glacier vault to save the archives to
+vault = ""
+
+[Path]
+# data directory used as a tempory location while doing the backups
+# this is where repos will be cloned to and archived before upload to s3-glacier
+# archives will be deleted after upload
+root_dir = "" # optional
+# location to store backup logs
+log_dir = "" # optional
+# date format used in archive name (follows the go date format)
+# https://pkg.go.dev/time#pkg-constants
+date_format = "" # optional

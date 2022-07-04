@@ -1,0 +1,8 @@
+# Distribution crap
+.ghb.toml
+/github-backup
+/backup-restore
+
+# Run dirs
+logs/
+backup/
